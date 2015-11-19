@@ -1,180 +1,57 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
-<head>
-<title>svntogit/packages.git - Git clone of the 'packages' repository
-</title>
-<meta name='generator' content='cgit v0.10.2'/>
-<meta name='robots' content='index, nofollow'/>
-<link rel='stylesheet' type='text/css' href='/cgit.css'/>
-<link rel='shortcut icon' href='/favicon.ico'/>
-<link rel='alternate' title='Atom feed' href='https://projects.archlinux.org/svntogit/packages.git/atom/trunk/libnssckbi-compat.patch?h=packages/p11-kit' type='application/atom+xml'/>
-<link rel='vcs-git' href='git://projects.archlinux.org/svntogit/packages.git' title='svntogit/packages.git Git repository'/>
-<link rel='vcs-git' href='http://projects.archlinux.org/git/svntogit/packages.git' title='svntogit/packages.git Git repository'/>
-<link rel='vcs-git' href='https://projects.archlinux.org/git/svntogit/packages.git' title='svntogit/packages.git Git repository'/>
-<link rel='vcs-git' href='ssh://gerolde.archlinux.org/srv/projects/git/svntogit/packages.git' title='svntogit/packages.git Git repository'/>
-</head>
-<body>
-	<div id="archnavbar"><!-- Arch Linux global navigation bar -->
-		<div id="archnavbarlogo">
-			<p><a href="http://www.archlinux.org/" title="Arch news, packages, projects and more"></a></p>
-		</div>
-		<div id="archnavbarmenu">
-			<ul id="archnavbarlist">
-				<li id="anb-home"><a href="http://www.archlinux.org/" title="Arch news, packages, projects and more">Home</a></li>
-				<li id="anb-packages"><a href="http://www.archlinux.org/packages/" title="Arch Package Database">Packages</a></li>
-				<li id="anb-forums"><a href="https://bbs.archlinux.org/" title="Community forums">Forums</a></li>
-				<li id="anb-wiki"><a href="https://wiki.archlinux.org/" title="Community documentation">Wiki</a></li>
-				<li id="anb-bugs"><a href="https://bugs.archlinux.org/" title="Report and follow bugs">Bugs</a></li>
-				<li id="anb-aur"><a href="https://aur.archlinux.org/" title="Arch Linux User Repository">AUR</a></li>
-				<li id="anb-download"><a href="http://www.archlinux.org/download/" title="Get Arch Linux">Download</a></li>
-			</ul>
-		</div>
-	</div><!-- #archnavbar -->
-<div id='cgit'><table id='header'>
-<tr>
-<td class='main'><a href='/'>index</a> : <a title='svntogit/packages.git' href='/svntogit/packages.git/'>svntogit/packages.git</a></td></tr>
-<tr><td class='sub'>Git clone of the 'packages' repository
-</td><td class='sub right'></td></tr></table>
-<table class='tabs'><tr><td>
-<a href='/svntogit/packages.git/?h=packages/p11-kit'>summary</a><a href='/svntogit/packages.git/refs/?h=packages/p11-kit'>refs</a><a href='/svntogit/packages.git/log/trunk/libnssckbi-compat.patch?h=packages/p11-kit'>log</a><a class='active' href='/svntogit/packages.git/tree/trunk/libnssckbi-compat.patch?h=packages/p11-kit'>tree</a><a href='/svntogit/packages.git/commit/trunk/libnssckbi-compat.patch?h=packages/p11-kit'>commit</a><a href='/svntogit/packages.git/diff/trunk/libnssckbi-compat.patch?h=packages/p11-kit'>diff</a><a href='/svntogit/packages.git/stats/trunk/libnssckbi-compat.patch?h=packages/p11-kit'>stats</a></td><td class='form'><form class='right' method='get' action='/svntogit/packages.git/log/trunk/libnssckbi-compat.patch'>
-<input type='hidden' name='h' value='packages/p11-kit'/><select name='qt'>
-<option value='grep'>log msg</option>
-<option value='author'>author</option>
-<option value='committer'>committer</option>
-<option value='range'>range</option>
-</select>
-<input class='txt' type='text' size='10' name='q' value=''/>
-<input type='submit' value='search'/>
-</form>
-</td></tr></table>
-<div class='path'>path: <a href='/svntogit/packages.git/tree/?h=packages/p11-kit'>root</a>/<a href='/svntogit/packages.git/tree/trunk?h=packages/p11-kit'>trunk</a>/<a href='/svntogit/packages.git/tree/trunk/libnssckbi-compat.patch?h=packages/p11-kit'>libnssckbi-compat.patch</a></div><div class='content'>blob: d1b70a3bb509bcff04bc8f7e084cc9e3260ce5fa (<a href='/svntogit/packages.git/plain/trunk/libnssckbi-compat.patch?h=packages/p11-kit'>plain</a>)
-<table summary='blob content' class='blob'>
-<tr><td class='linenumbers'><pre><a id='n1' href='#n1'>1</a>
-<a id='n2' href='#n2'>2</a>
-<a id='n3' href='#n3'>3</a>
-<a id='n4' href='#n4'>4</a>
-<a id='n5' href='#n5'>5</a>
-<a id='n6' href='#n6'>6</a>
-<a id='n7' href='#n7'>7</a>
-<a id='n8' href='#n8'>8</a>
-<a id='n9' href='#n9'>9</a>
-<a id='n10' href='#n10'>10</a>
-<a id='n11' href='#n11'>11</a>
-<a id='n12' href='#n12'>12</a>
-<a id='n13' href='#n13'>13</a>
-<a id='n14' href='#n14'>14</a>
-<a id='n15' href='#n15'>15</a>
-<a id='n16' href='#n16'>16</a>
-<a id='n17' href='#n17'>17</a>
-<a id='n18' href='#n18'>18</a>
-<a id='n19' href='#n19'>19</a>
-<a id='n20' href='#n20'>20</a>
-<a id='n21' href='#n21'>21</a>
-<a id='n22' href='#n22'>22</a>
-<a id='n23' href='#n23'>23</a>
-<a id='n24' href='#n24'>24</a>
-<a id='n25' href='#n25'>25</a>
-<a id='n26' href='#n26'>26</a>
-<a id='n27' href='#n27'>27</a>
-<a id='n28' href='#n28'>28</a>
-<a id='n29' href='#n29'>29</a>
-<a id='n30' href='#n30'>30</a>
-<a id='n31' href='#n31'>31</a>
-<a id='n32' href='#n32'>32</a>
-<a id='n33' href='#n33'>33</a>
-<a id='n34' href='#n34'>34</a>
-<a id='n35' href='#n35'>35</a>
-<a id='n36' href='#n36'>36</a>
-<a id='n37' href='#n37'>37</a>
-<a id='n38' href='#n38'>38</a>
-<a id='n39' href='#n39'>39</a>
-<a id='n40' href='#n40'>40</a>
-<a id='n41' href='#n41'>41</a>
-<a id='n42' href='#n42'>42</a>
-<a id='n43' href='#n43'>43</a>
-<a id='n44' href='#n44'>44</a>
-<a id='n45' href='#n45'>45</a>
-<a id='n46' href='#n46'>46</a>
-<a id='n47' href='#n47'>47</a>
-<a id='n48' href='#n48'>48</a>
-<a id='n49' href='#n49'>49</a>
-<a id='n50' href='#n50'>50</a>
-<a id='n51' href='#n51'>51</a>
-<a id='n52' href='#n52'>52</a>
-<a id='n53' href='#n53'>53</a>
-<a id='n54' href='#n54'>54</a>
-<a id='n55' href='#n55'>55</a>
-<a id='n56' href='#n56'>56</a>
-<a id='n57' href='#n57'>57</a>
-</pre></td>
-<td class='lines'><pre><code>diff -upr p11-kit-0.23.1.orig/trust/Makefile.am p11-kit-0.23.1/trust/Makefile.am
-<span class="hl kwb">--- p11-kit-0.23.1.orig/trust/Makefile.am	2014-11-12 12:58:50.000000000 +0200</span>
-<span class="hl kwa">+++ p11-kit-0.23.1/trust/Makefile.am	2015-03-30 16:43:35.275993032 +0300</span>
-&#64;&#64; -61,6 +61,20 &#64;&#64; p11_kit_trust_la_LDFLAGS = \
+diff -upr p11-kit-0.23.1.orig/trust/Makefile.am p11-kit-0.23.1/trust/Makefile.am
+--- p11-kit-0.23.1.orig/trust/Makefile.am	2014-11-12 12:58:50.000000000 +0200
++++ p11-kit-0.23.1/trust/Makefile.am	2015-03-30 16:43:35.275993032 +0300
+@@ -61,6 +61,20 @@ p11_kit_trust_la_LDFLAGS = \
  
  p11_kit_trust_la_SOURCES = $(TRUST_SRCS)
  
-<span class="hl kwa">+libnssckbi_compatdir = $(libdir)</span>
-<span class="hl kwa">+libnssckbi_compat_LTLIBRARIES = \</span>
-<span class="hl kwa">+	libnssckbi-p11-kit.la</span>
-<span class="hl kwa">+</span>
-<span class="hl kwa">+libnssckbi_p11_kit_la_CFLAGS = \</span>
-<span class="hl kwa">+	-DLIBNSSCKBI_COMPAT \</span>
-<span class="hl kwa">+	$(p11_kit_trust_la_CFLAGS)</span>
-<span class="hl kwa">+</span>
-<span class="hl kwa">+libnssckbi_p11_kit_la_LIBADD = $(p11_kit_trust_la_LIBADD)</span>
-<span class="hl kwa">+</span>
-<span class="hl kwa">+libnssckbi_p11_kit_la_LDFLAGS = $(p11_kit_trust_la_LDFLAGS)</span>
-<span class="hl kwa">+</span>
-<span class="hl kwa">+libnssckbi_p11_kit_la_SOURCES = $(p11_kit_trust_la_SOURCES)</span>
-<span class="hl kwa">+</span>
++libnssckbi_compatdir = $(libdir)
++libnssckbi_compat_LTLIBRARIES = \
++	libnssckbi-p11-kit.la
++
++libnssckbi_p11_kit_la_CFLAGS = \
++	-DLIBNSSCKBI_COMPAT \
++	$(p11_kit_trust_la_CFLAGS)
++
++libnssckbi_p11_kit_la_LIBADD = $(p11_kit_trust_la_LIBADD)
++
++libnssckbi_p11_kit_la_LDFLAGS = $(p11_kit_trust_la_LDFLAGS)
++
++libnssckbi_p11_kit_la_SOURCES = $(p11_kit_trust_la_SOURCES)
++
  libtrust_testable_la_LDFLAGS = \
  	-no-undefined
  
 diff -upr p11-kit-0.23.1.orig/trust/module.c p11-kit-0.23.1/trust/module.c
-<span class="hl kwb">--- p11-kit-0.23.1.orig/trust/module.c	2014-12-16 12:24:01.000000000 +0200</span>
-<span class="hl kwa">+++ p11-kit-0.23.1/trust/module.c	2015-03-30 16:48:41.370360130 +0300</span>
-&#64;&#64; -196,7 +196,11 &#64;&#64; create_tokens_inlock (p11_array *tokens,
+--- p11-kit-0.23.1.orig/trust/module.c	2014-12-16 12:24:01.000000000 +0200
++++ p11-kit-0.23.1/trust/module.c	2015-03-30 16:48:41.370360130 +0300
+@@ -196,7 +196,11 @@ create_tokens_inlock (p11_array *tokens,
  		const char *label;
  	} labels[] = {
- 		{ &quot;~/&quot;, &quot;User Trust&quot; },
-<span class="hl kwa">+#ifdef LIBNSSCKBI_COMPAT</span>
-<span class="hl kwa">+		{ DATA_DIR, &quot;Builtin Object Token&quot; },</span>
-<span class="hl kwa">+#else</span>
- 		{ DATA_DIR, &quot;Default Trust&quot; },
-<span class="hl kwa">+#endif</span>
- 		{ SYSCONFDIR, &quot;System Trust&quot; },
+ 		{ "~/", "User Trust" },
++#ifdef LIBNSSCKBI_COMPAT
++		{ DATA_DIR, "Builtin Object Token" },
++#else
+ 		{ DATA_DIR, "Default Trust" },
++#endif
+ 		{ SYSCONFDIR, "System Trust" },
  		{ NULL },
  	};
-&#64;&#64; -521,9 +525,15 &#64;&#64; sys_C_GetSlotInfo (CK_SLOT_ID id,
- 		info-&gt;flags = CKF_TOKEN_PRESENT;
- 		strncpy ((char*)info-&gt;manufacturerID, MANUFACTURER_ID, 32);
+@@ -521,9 +525,15 @@ sys_C_GetSlotInfo (CK_SLOT_ID id,
+ 		info->flags = CKF_TOKEN_PRESENT;
+ 		strncpy ((char*)info->manufacturerID, MANUFACTURER_ID, 32);
  
-<span class="hl kwb">-		/* If too long, copy the first 64 characters into buffer */</span>
-<span class="hl kwb">-		path = p11_token_get_path (token);</span>
-<span class="hl kwa">+#ifdef LIBNSSCKBI_COMPAT</span>
-<span class="hl kwa">+		/* Change description to match libnssckbi so HPKP works in Chromium */</span>
-<span class="hl kwa">+		if (strcmp (p11_token_get_label (token), &quot;Builtin Object Token&quot; ) == 0)</span>
-<span class="hl kwa">+			path = &quot;NSS Builtin Objects&quot;;</span>
-<span class="hl kwa">+		else</span>
-<span class="hl kwa">+#endif</span>
-<span class="hl kwa">+			path = p11_token_get_path (token);</span>
+-		/* If too long, copy the first 64 characters into buffer */
+-		path = p11_token_get_path (token);
++#ifdef LIBNSSCKBI_COMPAT
++		/* Change description to match libnssckbi so HPKP works in Chromium */
++		if (strcmp (p11_token_get_label (token), "Builtin Object Token" ) == 0)
++			path = "NSS Builtin Objects";
++		else
++#endif
++			path = p11_token_get_path (token);
  		length = strlen (path);
-<span class="hl kwa">+		/* If too long, copy the first 64 characters into buffer */</span>
- 		if (length &gt; sizeof (info-&gt;slotDescription))
- 			length = sizeof (info-&gt;slotDescription);
- 		memset (info-&gt;slotDescription, ' ', sizeof (info-&gt;slotDescription));
-</code></pre></td></tr></table>
-</div> <!-- class=content -->
-<div class="foot" style="padding-left:1em;padding-right:1em;">
-<p>Copyright &copy; 2002-2014 <a href="mailto:jvinet@zeroflux.org"
-title="contact Judd Vinet">Judd Vinet</a> and <a href="mailto:aaron@archlinux.org"
-title="contact Aaron Griffin">Aaron Griffin</a>. The Arch Linux name and logo
-are recognized trademarks. Some rights reserved. The registered trademark
-Linux&reg; is used pursuant to a sublicense from LMI, the exclusive licensee
-of Linus Torvalds, owner of the mark on a world-wide basis.</p>
-</div>
-</div> <!-- id=cgit -->
-</body>
-</html>
++		/* If too long, copy the first 64 characters into buffer */
+ 		if (length > sizeof (info->slotDescription))
+ 			length = sizeof (info->slotDescription);
+ 		memset (info->slotDescription, ' ', sizeof (info->slotDescription));
