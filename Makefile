@@ -6,7 +6,7 @@ RELEASE_DIR = /tmp/$(PACKAGE)-release
 RELEASE_FILE = /tmp/$(PACKAGE).tar.gz
 PATH_FLAGS = --prefix=/usr --infodir=/tmp/trash
 CONF_FLAGS = --without-libffi
-CFLAGS = -static -static-libgcc -Wl,-static -DHAVE_STRCONCAT
+CFLAGS = -static -static-libgcc -Wl,-static
 
 PACKAGE_VERSION = $$(git --git-dir=upstream/.git describe --tags)
 PATCH_VERSION = $$(cat version)
