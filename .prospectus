@@ -1,0 +1,13 @@
+item do
+  expected do
+    url_xpath
+    url 'http://cgit.freedesktop.org/p11-glue/p11-kit/refs/tags'
+    xpath '//*[@id="cgit"]/div[1]/table/tr[2]/td[1]/a'
+    regex /^([\d.]+)$/
+  end
+
+  actual do
+    git_tag
+    regex /^(.*)-\d+$/
+  end
+end
