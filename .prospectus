@@ -10,4 +10,21 @@ item do
     git_tag
     regex /^(.*)-\d+$/
   end
+
+  deps do
+    item do
+      name 'libtasn1'
+
+      expected do
+        github_release
+        repo "amylum/libtasn1"
+      end
+
+      actual do
+        grep
+        file 'Makefile'
+        regex /^LIBTASN1_VERSION = ([\d.-]+)$/
+      end
+    end
+  end
 end
