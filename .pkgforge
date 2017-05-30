@@ -4,7 +4,7 @@ org 'amylum'
 licenses 'COPYING'
 
 deps(
-  libtasn1: '4.9-5'
+  libtasn1: '4.12-1'
 )
 
 configure_flags(
