@@ -1,6 +1,6 @@
-[submodule "upstream"]
-	path = upstream
-	url = git://anongit.freedesktop.org/p11-glue/p11-kit
 [submodule "meta"]
 	path = meta
 	url = git://github.com/amylum/pkgforge-helper
+[submodule "upstream"]
+	path = upstream
+	url = https://github.com/p11-glue/p11-kit
