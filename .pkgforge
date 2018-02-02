@@ -5,8 +5,8 @@ licenses 'COPYING'
 
 deps(
   libtasn1: {
-    version: '4.12-1',
-    checksum: '4396d9f56ebabf1f433abc027541e13bccd393dda871633046bde6e646c62749'
+    version: '4.13-1',
+    checksum: 'fd245952c05c8d3b7fd5b56c920c05c91e9e05a5aec9f83eb109d21d15684345'
   }
 )
 
