@@ -6,10 +6,8 @@ my_slug = pkgforge.org + '/' + pkgforge.name
 
 item do
   expected do
-    url_xpath
-    url 'https://cgit.freedesktop.org/p11-glue/p11-kit/refs/tags'
-    xpath '//*[@id="cgit"]/div[1]/table/tr[2]/td[1]/a'
-    regex /^([\d.]+)$/
+    github_release
+    repo 'p11-glue/p11-kit'
   end
 
   actual do
