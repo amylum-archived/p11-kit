@@ -20,8 +20,6 @@ remove_linker_archives
 cflags
 harden
 
-patch 'libnssckbi-compat.patch'
-
 build do
   run './autogen.sh'
   configure
