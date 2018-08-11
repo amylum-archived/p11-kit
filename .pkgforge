@@ -13,7 +13,8 @@ deps(
 configure_flags(
   prefix: '/usr',
   sysconfdir: '/etc',
-  'without-libffi': nil
+  'without-libffi': nil,
+  'without-systemd': nil,
 )
 remove_linker_archives
 
