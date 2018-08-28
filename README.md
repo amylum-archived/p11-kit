@@ -1,7 +1,7 @@
 p11-kit
 ==========
 
-[![Build Status](https://img.shields.io/circleci/project/amylum/p11-kit/master.svg)](https://circleci.com/gh/amylum/p11-kit)
+[![Build Status](https://img.shields.io/travis/com/amylum/p11-kit.svg)](https://travis-ci.com/amylum/p11-kit)
 [![GitHub release](https://img.shields.io/github/release/amylum/p11-kit.svg)](https://github.com/amylum/p11-kit/releases)
 [![BSD Licensed](http://img.shields.io/badge/license-BSD-green.svg)](https://tldrlegal.com/license/bsd-3-clause-license-(revised))
 
